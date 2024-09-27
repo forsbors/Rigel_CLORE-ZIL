@@ -4,7 +4,7 @@ POOL1="stratum+tcp://eu.clore.k1pool.com:5030" # тут меняй адрес п
 WALLET1="Krf63bWe2Eme2R3PPnPepH8YQQoyQmvjNuY" # тут меняй адрес кошелька CLORE на свой, кавычки оставь на месте, этот коммент не удаляй
 POOL2="stratum+tcp://eu.zil.k1pool.com:1111" # тут меняй адрес пула ZIL на свой, кавычки оставь на месте, этот коммент не удаляй
 WALLET2="Krf63bWe2Eme2R3PPnPepH8YQQoyQmvjNuY" # тут меняй адрес кошелька ZIL на свой, кавычки оставь на месте, этот коммент не удаляй
-WORKER="Rig10" # тут меняй имя рига, кавычки оставь на месте, этот коммент не удаляй
+WORKER="$(hostname)" # тут меняй имя рига, кавычки оставь на месте, этот коммент не удаляй
 
 apt update -y
 apt install screen -y
