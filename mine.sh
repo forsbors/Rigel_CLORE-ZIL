@@ -11,8 +11,8 @@ apt install screen -y
 cd ~
 wget https://github.com/rigelminer/rigel/releases/download/1.19.1/rigel-1.19.1-linux.tar.gz
 tar -xvf rigel-1.19.1-linux.tar.gz
-echo "/root/rigel-1.15.0-linux/rigel -a $ALGO -o [1]$POOL1 -u [1]$WALLET1 -o [2]$POOL2 -u [2]$WALLET2 -w $WORKER" > /root/mine.sh
-chmod +x /root/mine.sh
+echo "/root/rigel-1.19.1-linux/rigel -a $ALGO -o [1]$POOL1 -u [1]$WALLET1 -o [2]$POOL2 -u [2]$WALLET2 -w $WORKER" > /root/mine1.sh
+chmod +x /root/mine1.sh
 screen -dmS mining bash /root/mine.sh
 echo "" >> /etc/supervisor/conf.d/supervisord.conf
 echo "[program:mining]" >> /etc/supervisor/conf.d/supervisord.conf
