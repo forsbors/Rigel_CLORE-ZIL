@@ -16,4 +16,4 @@ chmod +x /root/mine1.sh
 screen -dmS mining bash /root/mine1.sh
 echo "" >> /etc/supervisor/conf.d/supervisord.conf
 echo "[program:mining]" >> /etc/supervisor/conf.d/supervisord.conf
-echo "command=/bin/bash -c 'screen -dmS mining bash /root/mine.sh && sleep infinity'" >> /etc/supervisor/conf.d/supervisord.conf
+echo "command=/bin/bash -c 'screen -dmS mining bash /root/mine1.sh && sleep infinity'" >> /etc/supervisor/conf.d/supervisord.conf
